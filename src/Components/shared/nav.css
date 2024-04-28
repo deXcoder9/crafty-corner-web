@@ -1,0 +1,11 @@
+ul li a.active{
+    border-bottom: 2px solid ;
+
+}
+
+@media screen and (max-width:600px){
+    ul li a.active{
+        border-bottom: 2px solid ;
+
+}
+}
