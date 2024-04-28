@@ -28,8 +28,8 @@
   }
   /* 13 */
   .btn-13 {
-    background-color: white;
-    color: black;
+    background-color: #caabab ;
+    color: white;
   /* background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%); */
     border: none;
     z-index: 1;
@@ -65,16 +65,16 @@
   
   .first_slider {
     background-size: cover;
-    background: linear-gradient(to right, rgba(54, 50, 50, 0.577), rgba(0, 0, 0, 0)), url("../../assets/sliderOne.jpg");
+    background: linear-gradient(to right, rgba(54, 50, 50, 0.577), rgba(0, 0, 0, 0)), url("https://i.ibb.co/5rmMNkY/rsz-1pexels-rahatali-1493088.png");
     ;
   }
   
-  /* .second_slider {
+   .second_slider {
     background-size: cover;
-    background: linear-gradient(to right, rgba(54, 50, 50, 0.543), rgba(0, 0, 0, 0)), url("https://i.ibb.co/v4ytJpB/bgThree.jpg");
+    background: linear-gradient(to right, rgba(54, 50, 50, 0.543), rgba(0, 0, 0, 0)), url("https://i.ibb.co/c3Fw6SB/rsz-2pexels-onbab-14396617-1.jpg");
     ;
   }
-  
+  /*
   .third_slider {
     background-size: cover;
     background: linear-gradient(to right, rgba(54, 50, 50, 0.577), rgba(0, 0, 0, 0)), url("https://i.ibb.co/CnQghbm/bgTwo.jpg");

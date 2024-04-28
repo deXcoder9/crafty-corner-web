@@ -8,8 +8,7 @@ const ArtnCraft = () => {
     console.log(artAndCarts)
     
     return (
-        <div>
-            <h1>All Art and Craft {artAndCarts.length} </h1>
+        <div className="mt-10">
             <div className="overflow-x-auto">
   <table className="table w-4/5 mx-auto ">
     {/* head */}
@@ -31,7 +30,7 @@ const ArtnCraft = () => {
                     <td>{xs.subcategory}</td>
                     <td>{xs.rating}</td>
                     <td>{xs.price}</td>
-                    <td> <Link to={`/details/${xs._id}`}>View Details</Link>  </td>
+                    <td> <Link to={`/details/${xs._id}`} className="bg-[#caabab] px-6 py-2 rounded-lg hover:outline hover:outline-[#caabab] hover:bg-transparent text-black">View Details</Link>  </td>
                   </tr> )
             }
      

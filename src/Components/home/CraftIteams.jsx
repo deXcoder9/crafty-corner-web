@@ -12,9 +12,9 @@ useEffect(()=>{
     return (
         <div>
             <Fade direction="up">
-            <h1 className="mt-16">Craft Iteams {cardDetails.length}</h1>
+            <h1 className="mt-16 text-3xl underline ">Art & Craft Items </h1>
             </Fade>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur voluptas optio ducimus assumenda similique sed? Cum exercitationem magnam animi.</p>
+          
          
 
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center  mt-7 space-y-4 lg:w-[1000px] mx-auto ">
@@ -24,9 +24,9 @@ useEffect(()=>{
                     <div>
                         <img src={ss.photo} alt="" className="rounded-lg h-[300px] w-[100%]" />
                     </div>
-                    <div className="flex justify-between text-base py-1">
-                        <p>{ss.inStock}</p>
-                        <Link to={`/details/${ss._id}`}>View Details</Link>
+                    <div className="grid grid-cols-3 text-base py-4 ">
+                        <p className="">{ss.inStock}</p>
+                        <p> <Link to={`/details/${ss._id}`} className="bg-[#caabab] px-3 py-2 rounded-lg">View Details</Link>  </p>
                         <p>{ss.price}</p>
                     </div>
                 </div> )

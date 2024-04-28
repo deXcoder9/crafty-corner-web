@@ -9,7 +9,8 @@ const ArtnCraftList = () => {
   const { userInfo } = useContext(AuthContext);
   // console.log(userInfo)
   const allDetails = useLoaderData();
-  const [details, setDetails] = useState(allDetails);
+  // const [details, setDetails] = useState(allDetails);
+  const details = allDetails
   const [filterDetails,setfilterDetails] = useState(allDetails);
   // console.log(allDetails)
   const UserAddedThings = allDetails.filter(
@@ -38,7 +39,7 @@ const ArtnCraftList = () => {
             console.log(data);
             if (data.deletedCount > 0) {
               const remaining = details.filter((detail) => detail._id !== _id);
-              setDetails(remaining);
+              setfilterDetails(remaining);
               Swal.fire({
                 title: "Deleted!",
                 text: "Your file has been deleted.",

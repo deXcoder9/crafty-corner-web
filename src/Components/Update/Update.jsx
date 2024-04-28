@@ -299,7 +299,7 @@ const Update = () => {
           className="btn btn-block btn-ghost bg-gray-800 text-white text-lg h-[60px] font-bold">
           </input>
                   */}
-        <button className="custom-btn btn-5">
+        <button className="custom-btn-22 btn-22">
           <span>Add to the Art & Craft</span>
         </button>
       </form>
