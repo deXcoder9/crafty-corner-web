@@ -20,7 +20,7 @@ const Navbar = () => {
          <li><NavLink to='/myArtnCart'> My Art & Cart List</NavLink></li>
      </>
 
-    console.log(userInfo)    
+    // console.log(userInfo)    
     const handleLogOut = () =>{
       signOut(auth)
       .then(()=> alert("signOut Successfull"))

@@ -1,3 +1,4 @@
+
 import "./Form.css";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -99,7 +100,8 @@ const Form = () => {
               {/* <label>Message</label> */}
               {/* <span>Message</span> */}
             </div>
-            <input   value="Send" className="btn" />
+            {/* <input   value="Send" className="btn" /> */}
+            <button className="btn">Send</button>
           </form>
         </div>
       </div>

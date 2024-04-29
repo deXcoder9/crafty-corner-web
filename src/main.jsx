@@ -16,8 +16,10 @@ import Root from '../Root.jsx';
 import Private from './Protected Route/Private.jsx';
 import CardDetails from './Components/Details/CardDetails.jsx';
 import Update from './Components/Update/Update.jsx';
+import ArtAndCartCategoryDetails from './Components/Art and Craft Categories/ArtAndCartCategoryDetails.jsx';
 
 const router = createBrowserRouter([
+
   {
     path: "/",
     element: <Root></Root>,
@@ -54,6 +56,11 @@ const router = createBrowserRouter([
         path:'/update/:id',
         element: <Update></Update> ,
         loader:({params})=> fetch(`http://localhost:5000/artncraft/${params.id}`)
+      },
+      {
+        path:'/ArtAndCartCategoryDetails/:id',
+        element: <ArtAndCartCategoryDetails></ArtAndCartCategoryDetails>,
+        loader: ()=> fetch("http://localhost:5000/artandcraftcategories")
       }
     ]
   },

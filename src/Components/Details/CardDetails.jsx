@@ -25,6 +25,7 @@ const CardDetails = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mt-8 bg-orange-100 w-2/3 mx-auto py-6 rounded-lg">
+      <h1>Hi</h1>
         
       <img className="w-[500px] rounded-2xl  " src={photo} alt="" />
       <div className="w-[400px] space-y-2 text-left ">
