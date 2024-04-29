@@ -4,6 +4,7 @@ import { AuthContext } from "../../Auth Provider/AuthProvider";
 import { FaStar } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import "sweetalert2/src/sweetalert2.scss";
+import { MdOutlineCancel } from "react-icons/md";
 
 const ArtnCraftList = () => {
   const { userInfo } = useContext(AuthContext);
@@ -108,15 +109,15 @@ const ArtnCraftList = () => {
                 <p className="text-left ">{x.inStock}</p>
                 <p>{x.price}</p>
               </div>
-              <div>
-                <Link to={`/update/${x._id}`} className="btn btn-primary">
-                  Update{" "}
+              <div className="flex justify-center items-center">
+                <Link to={`/update/${x._id}`} className="btn bg-[#caabab] text-white">
+                  Modify
                 </Link>
                 <button
                   onClick={() => handleDelete(x._id)}
                   className="btn bg-red-500 ml-9"
                 >
-                  Delete
+                 <MdOutlineCancel className="text-3xl text-white " />
                 </button>
               </div>
             </div>

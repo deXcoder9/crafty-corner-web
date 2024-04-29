@@ -3,6 +3,7 @@ import Navbar from "./src/Components/shared/Navbar";
 import './src/Root.css'
 import useLocalStorage from "use-local-storage";
 import { Toggle } from "../client_side/src/DarkMode/Toggle";
+import Footer from "./src/Components/shared/Footer/Footer";
 
 
 const Root = () => {
@@ -15,9 +16,8 @@ const Root = () => {
      <Navbar></Navbar>
       <Toggle  isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
       </div>
-     <div className="">
      <Outlet></Outlet>
-     </div>
+     <Footer></Footer>
      </div>
   );
 };

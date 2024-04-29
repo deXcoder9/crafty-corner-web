@@ -4,13 +4,13 @@ const Testimonial = () => {
    
     
       return (
-        <div className="mt-16">
+        <div className="my-16">
             <h1 className="text-3xl underline mb-5">Testimonial</h1>
         <div className="carousel w-3/4 h-[400px] ">
   <div id="slide1" className="carousel-item relative w-full">
     {/* <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" /> */}
     <div className="flex flex-col justify-center items-center space-y-3 w-full">
-       <img className="h-[200px] rounded-xl w-auto " src="https://i.ibb.co/VQjQTfp/photo-1503443207922-dff7d543fd0e-q-80-w-1527-auto-format-fit-crop-ixlib-rb-4-0.jpg" alt="" />
+       <img className="h-[100px]  lg:h-[200px] rounded-xl w-auto " src="https://i.ibb.co/VQjQTfp/photo-1503443207922-dff7d543fd0e-q-80-w-1527-auto-format-fit-crop-ixlib-rb-4-0.jpg" alt="" />
        <p className="text-xl">John Paul</p>
        <p className="text-sm lg:w-[700px]">What a delightful discovery! This website celebrates the beauty of natural materials through exquisite wooden and jute art and craft. The dedication to quality is evident in every product, from the intricate wood carvings to the intricately woven jute designs. I appreciate the range of prices, making it accessible to both seasoned collectors and those just starting their art collection journey. Overall, a fantastic destination for anyone seeking authentic, handcrafted pieces with character and charm</p>
        <p className="flex"> <FaStar /><FaStar /><FaStar /><FaStar /> </p>

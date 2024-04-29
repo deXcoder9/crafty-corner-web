@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="dropdown dropdown-end  z-50">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img title={userInfo.displayName} src={userInfo.photoURL} />
+          <img title={userInfo.displayName} className="" src={userInfo.photoURL} />
         </div>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -67,7 +67,7 @@ const Navbar = () => {
       </ul>
     </div>
       :
-       <Link to='/login' className="btn">Log in</Link>
+       <Link to='/login' className="btn hover:bg-[#caabab] hover:text-black ">Log in</Link>
     }
   </div>
 </div>

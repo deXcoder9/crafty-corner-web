@@ -61,8 +61,8 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="flex justify-around place-items-center h-[500px] ">
-        <div className="w-[500px]">
+        <div className="relative flex justify-around place-items-center h-[500px] ">
+        <div className="lg:w-[500px] absolute lg:static ">
         <h1 className="font__merriweather font-bold text-2xl lg:text-4xl ">
                  Jute Home Decoration
               </h1>
@@ -77,8 +77,8 @@ const Banner = () => {
               </button> */}
                 <button className="custom-btn-13 btn-13">Read More</button>
         </div>
-        <div>
-           <img className="w-[500px] h-[440px] rounded-xl" src="https://i.ibb.co/2WcHWT9/photo-1514053026555-49ce8886ae41-q-80-w-1887-auto-format-fit-crop-ixlib-rb-4-0.jpg" alt="" />
+        <div className="">
+           <img className="lg:w-[500px] lg:h-[440px]  rounded-xl" src="https://i.ibb.co/2WcHWT9/photo-1514053026555-49ce8886ae41-q-80-w-1887-auto-format-fit-crop-ixlib-rb-4-0.jpg" alt="" />
         </div>
         </div>
         </SwiperSlide>
