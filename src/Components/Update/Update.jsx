@@ -73,15 +73,15 @@ const Update = () => {
 
   return (
     <div className="tablet  md:border lg:border-none  w-[90%] mx-auto bg-[url('bgImage')]  rounded-xl p-4 md:p-12  ">
-      <h2 className="lg:text-3xl text-xl font-extrabold text-center text-[#0f0e0e] mb-9 underline">
-        Add Your Art & Craft
+      <h2 className="lg:text-3xl text-xl font-extrabold text-center mb-9 underline">
+        Modify Your Art & Craft
       </h2>
       <form onSubmit={handleUpdateCoffee} className="">
         {/* form supplier row */}
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Photo URL:
               </span>
             </label>
@@ -98,7 +98,7 @@ const Update = () => {
           </div>
           <div className="form-control  md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Item Name:
               </span>
             </label>
@@ -120,7 +120,7 @@ const Update = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Short Description:
               </span>
             </label>
@@ -137,7 +137,7 @@ const Update = () => {
           </div>
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Subcategory:
               </span>
             </label>
@@ -158,7 +158,7 @@ const Update = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Rating
               </span>
             </label>
@@ -176,7 +176,7 @@ const Update = () => {
           {/* Price */}
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Price:
               </span>
             </label>
@@ -196,7 +196,7 @@ const Update = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2 mb-4">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Processing Time:
               </span>
             </label>
@@ -214,7 +214,7 @@ const Update = () => {
           <div className="flex flex-col w-1/2 md:flex-row lg:flex-row mb-4 gap-3  items-center bg-blur px-3 rounded-lg border shadow-xl">
             <div className="form-control w-full md:w-1/2 lg:w-1/2 ">
               <label className="label">
-                <span className="label-text text-base font-bold text-[#1f1d1d]">
+                <span className="label-text text-base font-bold ">
                   Customize Description
                 </span>
               </label>
@@ -229,7 +229,7 @@ const Update = () => {
                     onChange={handleRadioChange}
                   />
                   <label
-                    className="text-[#696868] cursor-pointer"
+                    className=" cursor-pointer"
                     htmlFor="Yes"
                   >
                     Yes
@@ -244,7 +244,7 @@ const Update = () => {
                     value="no"
                     onChange={handleRadioChange}
                   />
-                  <label className="text-[#696868] cursor-pointer" htmlFor="No">
+                  <label className=" cursor-pointer" htmlFor="No">
                     No
                   </label>
                 </div>
@@ -252,7 +252,7 @@ const Update = () => {
             </div>
             <div className="form-control w-full md:w-1/2 lg:w-1/2 ">
               <label className="label">
-                <span className="label-text text-base font-bold text-[#1f1d1d]">
+                <span className="label-text text-base font-bold ">
                   Stock Status
                 </span>
               </label>
@@ -267,7 +267,7 @@ const Update = () => {
                     onChange={handleRadioChange}
                   />
                   <label
-                    className="text-[#696868] cursor-pointer"
+                    className=" cursor-pointer"
                     htmlFor="inStock"
                   >
                     In Stock
@@ -283,7 +283,7 @@ const Update = () => {
                     onChange={handleRadioChange}
                   />
                   <label
-                    className="text-[#696868] cursor-pointer"
+                    className=" cursor-pointer"
                     htmlFor="madeToOrder"
                   >
                     Made to Order

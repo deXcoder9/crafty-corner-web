@@ -180,13 +180,18 @@ const AddCraftToCart = () => {
               </span>
             </label>
             <label className="input-group">
-              <input
-                type="text"
+            <select
+                className="select select-bordered w-full  rounded-full"
                 name="subcategory"
-                placeholder="Provide a subcategory"
-                className="input input-bordered lg:w-[400px] float-left"
-                required
-              />
+              >
+                
+                {/* <option>Wooden Furniture & Sculptures</option> */}
+                {/* <option> Wooden Home Decor</option> */}
+                {/* <option>Wooden Utensils and Kitchenware</option> */}
+                {/* <option>Jute Home Decoration </option> */}
+                {/* <option>Jute Kitchenware & utensils</option> */}
+                <option>Jute and wooden jewellery</option>
+              </select>
             </label>
           </div>    
         </div>
