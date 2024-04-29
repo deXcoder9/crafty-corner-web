@@ -93,7 +93,7 @@ function SignUp() {
 
 
   return (
-    <section className="user">
+    <section className="user min-h-screen">
       <div className="user_options-container">
         <div className="user_options-text">
           <div className="user_options-unregistered">

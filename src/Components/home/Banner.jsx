@@ -63,10 +63,10 @@ const Banner = () => {
         <SwiperSlide>
         <div className="flex justify-around place-items-center h-[500px] ">
         <div className="w-[500px]">
-        <h1 className="font__merriweather font-bold text-2xl lg:text-4xl text-black">
+        <h1 className="font__merriweather font-bold text-2xl lg:text-4xl ">
                  Jute Home Decoration
               </h1>
-              <p className="text-gray-700 text-sm">
+              <p className=" text-sm">
                 Wooden home decor brings warmth and natural charm to any space.
                 From rustic accents to modern designs, it adds texture and
                 character, creating a cozy and inviting atmosphere while

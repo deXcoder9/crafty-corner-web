@@ -3,6 +3,8 @@ import "./addtocart.css";
 import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
 import { AuthContext } from "../../Auth Provider/AuthProvider";
+import { Fade } from "react-awesome-reveal";
+
 
 
 const AddCraftToCart = () => {
@@ -69,19 +71,21 @@ const AddCraftToCart = () => {
 
       }
     
-
      
     return (
       <div className="tablet  md:border lg:border-none  w-[90%] mx-auto bg-[url('bgImage')]  rounded-xl p-4 md:p-12  ">
-          <h2 className="lg:text-3xl text-xl font-extrabold text-center text-[#0f0e0e] mb-9 underline">
+        <Fade>
+          <h2    className="lg:text-3xl text-xl font-extrabold text-center  mb-9 underline">
           Add Your Art & Craft
         </h2>
+        </Fade>
+        
         <form onSubmit={handleAddCoffee}  className="">
           {/* form name and quantity row */}
           <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
             <div className="form-control w-full md:w-1/2 lg:w-1/2">
               <label className="label">
-                <span className="label-text  text-base font-bold text-[#1f1d1d]">
+                <span className="label-text  text-base font-bold ">
                   Name:
                 </span>
               </label>
@@ -98,7 +102,7 @@ const AddCraftToCart = () => {
             </div>
             <div className="form-control w-full md:w-1/2 lg:w-1/2">
               <label className="label">
-                <span className="label-text text-base font-bold text-[#1f1d1d]">
+                <span className="label-text text-base font-bold ">
                   Email:
                 </span>
               </label>
@@ -118,7 +122,7 @@ const AddCraftToCart = () => {
     <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
     <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Photo URL:
               </span>
             </label>
@@ -134,7 +138,7 @@ const AddCraftToCart = () => {
           </div>
           <div className="form-control  md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Item Name:
               </span>
             </label>
@@ -155,7 +159,7 @@ const AddCraftToCart = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Short Description:
               </span>
             </label>
@@ -171,7 +175,7 @@ const AddCraftToCart = () => {
           </div>
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Subcategory:
               </span>
             </label>
@@ -191,7 +195,7 @@ const AddCraftToCart = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Rating
               </span>
             </label>
@@ -208,7 +212,7 @@ const AddCraftToCart = () => {
           {/* Price */}
           <div className="form-control w-full md:w-1/2 lg:w-1/2">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Price:
               </span>
             </label>
@@ -227,7 +231,7 @@ const AddCraftToCart = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mb-8 gap-3">
           <div className="form-control w-full md:w-1/2 lg:w-1/2 mb-4">
             <label className="label">
-              <span className="label-text text-base font-bold text-[#1f1d1d]">
+              <span className="label-text text-base font-bold ">
                 Processing Time:
               </span>
             </label>
@@ -244,7 +248,7 @@ const AddCraftToCart = () => {
           <div className="flex flex-col w-1/2 md:flex-row lg:flex-row mb-4 gap-3  items-center bg-blur px-3 rounded-lg border shadow-xl">
             <div className="form-control w-full md:w-1/2 lg:w-1/2 ">
               <label className="label">
-                <span className="label-text text-base font-bold text-[#1f1d1d]">
+                <span className="label-text text-base font-bold ">
                   Customize Description
                 </span>
               </label>
@@ -279,7 +283,7 @@ const AddCraftToCart = () => {
             </div>
             <div className="form-control w-full md:w-1/2 lg:w-1/2 ">
               <label className="label">
-                <span className="label-text text-base font-bold text-[#1f1d1d]">
+                <span className="label-text text-base font-bold ">
                   Stock Status
                 </span>
               </label>

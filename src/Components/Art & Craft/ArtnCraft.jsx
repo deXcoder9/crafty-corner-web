@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-
+import { Tooltip } from 'react-tooltip'
 
 
 const ArtnCraft = () => {
@@ -8,7 +8,7 @@ const ArtnCraft = () => {
     console.log(artAndCarts)
     
     return (
-        <div className="mt-10">
+        <div className="mt-10 min-h-[100vh]">
             <div className="overflow-x-auto">
   <table className="table w-4/5 mx-auto ">
     {/* head */}
@@ -24,16 +24,17 @@ const ArtnCraft = () => {
     </thead>
     <tbody>
     {
-                artAndCarts.map((xs, idx )=>  <tr key={idx}>
+                artAndCarts.map((xs, idx )=>  <tr key={idx} data-tooltip-id="my-tooltip" data-tooltip-content={`user: ${xs.name}`} data-tooltip-place="top" >
                     <th>{idx +1}</th>
                     <td>{xs.item_name}</td>
                     <td>{xs.subcategory}</td>
                     <td>{xs.rating}</td>
                     <td>{xs.price}</td>
-                    <td> <Link to={`/details/${xs._id}`} className="bg-[#caabab] px-6 py-2 rounded-lg hover:outline hover:outline-[#caabab] hover:bg-transparent text-black">View Details</Link>  </td>
+                    <td> <Link to={`/details/${xs._id}`} className=" px-6 py-2 rounded-lg outline outline-[#caabab] bg-transparent  hover:bg-[#caabab] hover:text-white ">View Details</Link>  </td>
                   </tr> )
+
             }
-     
+     <Tooltip id="my-tooltip" />
     </tbody>
   </table>
 </div>

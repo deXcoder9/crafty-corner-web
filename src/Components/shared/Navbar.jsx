@@ -6,8 +6,12 @@ import auth from "../../../firebase.config";
 import './nav.css'
 // import DarkMode from "../../DarkMode/DarkMode"
 
+
 const Navbar = () => {
     const {userInfo} = useContext(AuthContext)
+
+  
+
     const navLinks =
      <>
          <li><NavLink id="sidebar" to='/'> Home</NavLink></li>
@@ -40,6 +44,7 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className=" menu-horizontal px-1 space-x-8">
     {navLinks}
+    
     </ul>
   </div>
   <div className="navbar-end space-x-2">

@@ -66,7 +66,7 @@ const ArtnCraftList = () => {
   }
 
   return (
-    <div>
+    <div className="min-h-screen">
       <div className="dropdown dropdown-hover">
         <div tabIndex={0} role="button" className="btn m-1">
           Customization

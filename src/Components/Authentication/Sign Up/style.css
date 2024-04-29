@@ -358,7 +358,8 @@
    */
   @media screen and (max-width: 990px) {
     .user_options-forms {
-      min-height: 350px;
+      /* min-height: 350px; */
+      min-width: 140px;
     }
     .user_options-forms .forms_buttons {
       -webkit-box-orient: vertical;
@@ -366,7 +367,7 @@
               flex-direction: column;
     }
     .user_options-forms .user_forms-login .forms_buttons-action {
-      margin-top: 30px;
+      /* margin-top: 30px; */
     }
     .user_options-forms .user_forms-signup,
     .user_options-forms .user_forms-login {

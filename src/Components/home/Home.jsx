@@ -1,3 +1,4 @@
+import Testimonial from "../extra two route/Testimonial";
 import Banner from "./Banner";
 import CraftIteams from "./CraftIteams";
 
@@ -5,10 +6,11 @@ import CraftIteams from "./CraftIteams";
 
 const Home = () => {
     return (
-        <div>
+        <div className="min-h-screen">
            <Banner></Banner>
            
            <CraftIteams></CraftIteams>
+           <Testimonial></Testimonial>
         </div>
     );
 };
