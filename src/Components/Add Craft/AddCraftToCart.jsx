@@ -188,7 +188,7 @@ const AddCraftToCart = () => {
               >
                 
                 <option>Wooden Furniture & Sculptures</option>
-                <option> Wooden Home Decor</option>
+                <option> Wooden Home Decoration</option>
                 <option>Wooden Utensils and Kitchenware</option>
                 <option>Jute Home Decoration </option>
                 <option>Jute Kitchenware & utensils</option>
