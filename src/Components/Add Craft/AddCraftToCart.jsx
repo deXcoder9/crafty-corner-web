@@ -97,6 +97,7 @@ const AddCraftToCart = () => {
                   className="input text-sm input-bordered  lg:w-[400px] float-left"
                   required
                   defaultValue={userInfo.displayName}
+                  disabled
                 />
               </label>
             </div>
@@ -114,6 +115,7 @@ const AddCraftToCart = () => {
                   className="input input-bordered lg:w-[400px] float-left"
                   required
                   defaultValue={userInfo.email}
+                  disabled
                 />
               </label>
             </div>
@@ -185,11 +187,11 @@ const AddCraftToCart = () => {
                 name="subcategory"
               >
                 
-                {/* <option>Wooden Furniture & Sculptures</option> */}
-                {/* <option> Wooden Home Decor</option> */}
-                {/* <option>Wooden Utensils and Kitchenware</option> */}
-                {/* <option>Jute Home Decoration </option> */}
-                {/* <option>Jute Kitchenware & utensils</option> */}
+                <option>Wooden Furniture & Sculptures</option>
+                <option> Wooden Home Decor</option>
+                <option>Wooden Utensils and Kitchenware</option>
+                <option>Jute Home Decoration </option>
+                <option>Jute Kitchenware & utensils</option>
                 <option>Jute and wooden jewellery</option>
               </select>
             </label>
@@ -226,7 +228,7 @@ const AddCraftToCart = () => {
                 type="text"
                 name="price"
                 placeholder="Price"
-                className="input input-bordered lg:w-[400px] float-left"
+                className="input input-bordered lg:w-[400px] float-left "
                 required
               />
             </label>

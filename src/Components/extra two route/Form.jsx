@@ -1,7 +1,4 @@
-import { useState } from "react";
 import "./Form.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BiSolidPhoneCall } from "react-icons/bi";
@@ -9,22 +6,7 @@ import { FaFacebookF,FaTwitter,FaLinkedinIn ,FaInstagram   } from "react-icons/f
 
 
 const Form = () => {
-    const [focus, setFocus] = useState({
-        name: false,
-        email: false,
-        phone: false,
-        message: false
-      });
-    
-      const handleFocus = (field) => {
-        setFocus({ ...focus, [field]: true });
-      };
-    
-      const handleBlur = (field, value) => {
-        if (!value) {
-          setFocus({ ...focus, [field]: false });
-        }
-      };
+   
     return (
         <div>
               <div className="container">
@@ -85,8 +67,6 @@ const Form = () => {
                 type="text"
                 name="name"
                 className="input"
-                onFocus={() => handleFocus("name")}
-                onBlur={(e) => handleBlur("name", e.target.value)}
               />
               <label>Username</label>
               <span>Username</span>
@@ -96,8 +76,6 @@ const Form = () => {
                 type="email"
                 name="email"
                 className="input"
-                onFocus={() => handleFocus("email")}
-                onBlur={(e) => handleBlur("email", e.target.value)}
               />
               <label>Email</label>
               <span>Email</span>
@@ -106,22 +84,20 @@ const Form = () => {
               <input
                 type="tel"
                 name="phone"
-                className="input"
-                onFocus={() => handleFocus("phone")}
-                onBlur={(e) => handleBlur("phone", e.target.value)}
-              />
-              <label>Phone</label>
-              <span>Phone</span>
+                className="input "
+                placeholder="Phone"
+                />
+                <label>Phone</label>
+             <span>Phone</span>
             </div>
             <div className="input-container textarea">
               <textarea
                 name="message"
                 className="input"
-                onFocus={() => handleFocus("message")}
-                onBlur={(e) => handleBlur("message", e.target.value)}
+                placeholder="Message"
               ></textarea>
-              <label>Message</label>
-              <span>Message</span>
+              {/* <label>Message</label> */}
+              {/* <span>Message</span> */}
             </div>
             <input   value="Send" className="btn" />
           </form>
