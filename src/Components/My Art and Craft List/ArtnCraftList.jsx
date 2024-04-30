@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import "sweetalert2/src/sweetalert2.scss";
 import { MdOutlineCancel } from "react-icons/md";
+// import "./design.css"
 
 const ArtnCraftList = () => {
   const { userInfo } = useContext(AuthContext);

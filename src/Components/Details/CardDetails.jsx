@@ -28,7 +28,7 @@ const CardDetails = () => {
     document.title = "Details"
 }, [])
   return (
-    <div className="flex flex-col justify-center items-center mt-8 bg-orange-100 w-2/3 mx-auto py-6 rounded-lg">
+    <div className="flex flex-col justify-center items-center mt-8 bg-[#c28c4e23] w-2/3 mx-auto py-6 rounded-lg">
 
         
       <img className="w-[500px] rounded-2xl  " src={photo} alt="" />
@@ -46,8 +46,8 @@ const CardDetails = () => {
         <p className="ml-9 flex"> <CiStar />  {rating}</p>
       </div>
       <div className="flex text-base">
-        <p className="bg-orange-200 p-3 rounded-xl">{inStock}</p>
-        <p className="ml-9 p-3">{price}</p>
+        <p className=" p-3 rounded-xl ">{inStock}</p>
+        <p className="ml-9 p-3">${price}</p>
       </div>
       </div>
     </div>

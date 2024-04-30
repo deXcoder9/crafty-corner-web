@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./design.css"
 
 const ArtnCraftCategory = () => {
   
@@ -16,7 +15,6 @@ const ArtnCraftCategory = () => {
     return (
         <div className="my-10">
             <h1 className="text-2xl mb-6">Art And Craft Category {craftsCategory.length} </h1>
-            {/* <h1 className="text-2xl mb-6">Art And Craft ALl {allCrafts.length} </h1> */}
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center lg:space-x-9 space-y-5">
 
             {
