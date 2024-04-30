@@ -2,10 +2,12 @@
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
+  font-family: "Kanit", sans-serif;
 }
 
+
 body{
-  background-color: white;
+  /* background-color: white; */
 
 }
 
