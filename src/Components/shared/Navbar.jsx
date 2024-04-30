@@ -39,7 +39,7 @@ const Navbar = () => {
         <li className="text-left" onClick={handleLogOut}>Log out</li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">CraftyCorner</a>
+    <a className="btn btn-ghost text-xl font-family ">CraftyCorner</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className=" menu-horizontal px-1 space-x-8">

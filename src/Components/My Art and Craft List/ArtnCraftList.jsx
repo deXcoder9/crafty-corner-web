@@ -10,14 +10,14 @@ const ArtnCraftList = () => {
   const { userInfo } = useContext(AuthContext);
   // console.log(userInfo)
   const allDetails = useLoaderData();
-  // const [details, setDetails] = useState(allDetails);
-  const details = allDetails
-  const [filterDetails,setfilterDetails] = useState(allDetails);
+  const [details, setDetails] = useState(allDetails);
+  // const details = allDetails
   // console.log(allDetails)
   const UserAddedThings = allDetails.filter(
     (sp) => sp.email === userInfo.email
   );
   console.log(UserAddedThings);
+  const [filterDetails,setfilterDetails] = useState(UserAddedThings);
 
   const handleDelete = (_id) => {
     console.log(_id);
@@ -54,14 +54,14 @@ const ArtnCraftList = () => {
 
   const handleAffirmationCustomization = (value) =>{
     if(value === "all"){
-        setfilterDetails(details)
+        setfilterDetails(UserAddedThings)
     }
     else if(value === "yes"){
-        const yesCustomizedDetails = details.filter(yes => yes.customization === "yes" )
+        const yesCustomizedDetails = UserAddedThings.filter(yes => yes.customization === "yes" )
         setfilterDetails(yesCustomizedDetails)
     }
     else if(value === "no"){
-        const noCustomizedDetails = details.filter(no => no.customization === "no" )
+        const noCustomizedDetails = UserAddedThings.filter(no => no.customization === "no" )
         setfilterDetails(noCustomizedDetails)
     }
   }
