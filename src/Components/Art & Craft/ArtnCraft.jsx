@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { Tooltip } from 'react-tooltip'
 
@@ -5,7 +6,10 @@ import { Tooltip } from 'react-tooltip'
 const ArtnCraft = () => {
     const artAndCarts = useLoaderData()
     // const {_id} = artAndCarts;
-    console.log(artAndCarts)
+    // console.log(artAndCarts)
+    useEffect(() => {
+      document.title = "All Art & Craft Items"
+  }, [])
     
     return (
         <div className="mt-10 min-h-[100vh]">

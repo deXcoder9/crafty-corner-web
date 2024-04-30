@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./addtocart.css";
 import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
@@ -71,7 +71,9 @@ const AddCraftToCart = () => {
 
       }
     
-     
+      useEffect(() => {
+        document.title = "Add Craft Item"
+    }, [])
     return (
       <div className="tablet  md:border lg:border-none  w-[90%] mx-auto bg-[url('bgImage')]  rounded-xl p-4 md:p-12  ">
         <Fade>

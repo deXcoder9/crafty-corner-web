@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Auth Provider/AuthProvider";
 import { FaStar } from "react-icons/fa6";
@@ -65,6 +65,10 @@ const ArtnCraftList = () => {
         setfilterDetails(noCustomizedDetails)
     }
   }
+
+  useEffect(() => {
+    document.title = "My Art & Craft Items"
+}, [])
 
   return (
     <div className="min-h-screen">

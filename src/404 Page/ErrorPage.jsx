@@ -1,7 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import './style.css'
+import { useEffect } from 'react';
 
 const ErrorPage = () => {
+  useEffect(() => {
+    document.title = "404 "
+}, [])
     return (
         <div id="notfound">
         <div className="notfound">

@@ -300,7 +300,7 @@ const Update = () => {
           </input>
                   */}
         <button className="custom-btn-22 btn-22">
-          <span>Add to the Art & Craft</span>
+          <span className="text-white">Add to the Art & Craft</span>
         </button>
       </form>
     </div>
