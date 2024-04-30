@@ -15,7 +15,7 @@ const ArtAndCartCategoryDetails = () => {
     const selectedCategory = selectedItem.subcategory.split(' ').join('').toLowerCase();
     console.log(selectedCategory)
     useEffect(()=>{
-        fetch("http://localhost:5000/artncraft")
+        fetch("https://server-side-eight-xi.vercel.app/artncraft")
         .then(res => res.json())
         .then(data => setAllCrafts(data))
     },[])

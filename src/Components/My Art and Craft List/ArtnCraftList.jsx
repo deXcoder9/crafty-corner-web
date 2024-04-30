@@ -33,7 +33,7 @@ const ArtnCraftList = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         console.log("delete confirmed");
-        fetch(`http://localhost:5000/artncraft/${_id}`, {
+        fetch(`https://server-side-eight-xi.vercel.app/artncraft/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

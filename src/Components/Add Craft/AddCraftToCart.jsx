@@ -49,7 +49,7 @@ const AddCraftToCart = () => {
         };
         console.log(newArtCraftDetails)
 
-        fetch("http://localhost:5000/artncraft" , {
+        fetch("https://server-side-eight-xi.vercel.app/artncraft" , {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

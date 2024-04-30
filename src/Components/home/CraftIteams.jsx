@@ -11,7 +11,7 @@ const showMore = () => {
   };
 
 useEffect(()=>{
-    fetch("http://localhost:5000/artncraft")
+    fetch("https://server-side-eight-xi.vercel.app/artncraft")
     .then(res => res.json())
     .then(data => setCardDetails(data))
 } ,[])

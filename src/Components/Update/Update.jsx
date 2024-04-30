@@ -50,7 +50,7 @@ const Update = () => {
     };
     console.log(newArtCraftDetails);
 
-    fetch(`http://localhost:5000/artncraft/${details._id}`, {
+    fetch(`https://server-side-eight-xi.vercel.app/artncraft/${details._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

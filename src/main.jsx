@@ -34,14 +34,15 @@ const router = createBrowserRouter([
         element: <SignUp></SignUp>
       },
       {
+        
         path:'/artncraft',
         element: <ArtnCraft></ArtnCraft>,
-        loader: ()=> fetch("http://localhost:5000/artncraft")
+        loader: ()=> fetch("https://server-side-eight-xi.vercel.app/artncraft")
       },
       {
         path: '/details/:id',
         element:  <Private> <CardDetails></CardDetails></Private>,
-        loader: ()=> fetch("http://localhost:5000/artncraft")
+        loader: ()=> fetch("https://server-side-eight-xi.vercel.app/artncraft")
       },
       {
         path:'/addCraft',
@@ -50,17 +51,17 @@ const router = createBrowserRouter([
       {
         path:'/myArtnCart',
         element: <Private><ArtnCraftList></ArtnCraftList></Private>,
-        loader:()=> fetch("http://localhost:5000/artncraft")
+        loader:()=> fetch("https://server-side-eight-xi.vercel.app/artncraft")
       },
       {
         path:'/update/:id',
         element: <Update></Update> ,
-        loader:({params})=> fetch(`http://localhost:5000/artncraft/${params.id}`)
+        loader:({params})=> fetch(`https://server-side-eight-xi.vercel.app/artncraft/${params.id}`)
       },
       {
         path:'/ArtAndCartCategoryDetails/:id',
         element: <ArtAndCartCategoryDetails></ArtAndCartCategoryDetails>,
-        loader: ()=> fetch("http://localhost:5000/artandcraftcategories")
+        loader: ()=> fetch("https://server-side-eight-xi.vercel.app/artandcraftcategories")
       }
     ]
   },

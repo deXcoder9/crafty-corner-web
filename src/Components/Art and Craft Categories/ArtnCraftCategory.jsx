@@ -6,7 +6,7 @@ const ArtnCraftCategory = () => {
     const [craftsCategory, setCraftsCategory] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:5000/artandcraftcategories")
+        fetch("https://server-side-eight-xi.vercel.app/artandcraftcategories")
         .then(res => res.json())
         .then(data => setCraftsCategory(data))
     },[])
