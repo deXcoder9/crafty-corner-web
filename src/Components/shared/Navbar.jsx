@@ -4,6 +4,8 @@ import { AuthContext } from "../../Auth Provider/AuthProvider";
 import { signOut } from "firebase/auth";
 import auth from "../../../firebase.config";
 import './nav.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import DarkMode from "../../DarkMode/DarkMode"
 
 
@@ -23,7 +25,7 @@ const Navbar = () => {
     // console.log(userInfo)    
     const handleLogOut = () =>{
       signOut(auth)
-      .then(()=> alert("signOut Successfull"))
+      .then(()=> toast.success("signOut Successfull"))
       .catch(error => console.log(error.message))
     }
 
@@ -70,6 +72,7 @@ const Navbar = () => {
        <Link to='/login' className="btn hover:bg-[#caabab] hover:text-black ">Log in</Link>
     }
   </div>
+  <ToastContainer />
 </div>
     );
 };

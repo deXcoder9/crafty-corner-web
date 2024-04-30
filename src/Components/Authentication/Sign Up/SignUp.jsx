@@ -3,6 +3,8 @@ import './style.css';
 import { FaGithub, FaGoogle  } from "react-icons/fa";
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import auth from '../../../../firebase.config';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SignUp() {
   const [isLoginFormVisible, setIsLoginFormVisible] = useState(true);
@@ -23,7 +25,7 @@ function SignUp() {
     signInWithPopup(auth, provider)
     .then(result => {
         console.log(result.user)
-        alert('successfully logged in')
+        toast.success('successfully logged in')
         // toast.success("successfully logged in ")
         setTimeout(function () {
             window.location.href = "/";
@@ -38,7 +40,7 @@ function SignUp() {
     signInWithPopup(auth, provider)
     .then(result => {
         console.log(result.user)
-        alert('successfully logged in')
+        toast.success('successfully logged in')
         // toast.success("successfully logged in ")
         setTimeout(function () {
             window.location.href = "/";
@@ -81,7 +83,7 @@ function SignUp() {
 
   createUserWithEmailAndPassword(auth, email, password)
   .then(()=>{
-    alert("user created successfully")
+    toast.success("user created successfully")
   })
   .catch((error)=>{
     console.log(error.message)
@@ -133,7 +135,7 @@ function SignUp() {
           </div>
           <div className="user_forms-signup">
             <h2 className="forms_title">Sign Up</h2>
-            <form onSubmit={handleNormalRegistration} className="forms_form">
+            <form onSubmit={handleNormalRegistration} className="forms_form lg:p-0">
               <fieldset className="forms_fieldset">
                 <div className="forms_field">
                   <input type="text" placeholder="Name" name='name' className="forms_field-input" required />
@@ -160,6 +162,7 @@ function SignUp() {
           </div>
         </div>
       </div>
+              <ToastContainer />
     </section>
   );
 }

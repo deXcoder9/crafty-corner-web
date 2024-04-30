@@ -48,7 +48,7 @@ useEffect(()=>{
                <div className="grid grid-cols-3 text-base py-4 ">
                    <p className="">{ss.inStock}</p>
                    <p> <Link to={`/details/${ss._id}`} className="bg-[#caabab] hover:bg-[#e2c0c0]  text-white px-3 py-2 rounded-lg">View Details</Link>  </p>
-                   <p>{ss.price}</p>
+                   <p>${ss.price}</p>
                </div>
            </div> )
 
