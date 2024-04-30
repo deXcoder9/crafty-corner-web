@@ -31,7 +31,7 @@ console.log(allCrafts)
 
         {
             matchedCategory.map(single => <div key={single._id} className="card   shadow-xl">
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <figure><img src={single.photo}  /></figure>
             <div className=" text-left space-y-2 text-sm px-3">
               <h2 className="card-title py-3">{single.item_name}</h2>
               <p className="text-[12px]">{single.subcategory}  </p>
