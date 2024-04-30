@@ -60,12 +60,12 @@ const Update = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.modifiedCount > 0) {
+        if (data.modifiedCount ) {
           Swal.fire({
             title: "Success!",
-            text: "Art and Craft Added Successfully",
+            text: "Art and Craft Updated Successfully",
             icon: "success",
-            confirmButtonText: "Cool",
+            confirmButtonText: "Done",
           });
         }
       });
@@ -211,7 +211,7 @@ const Update = () => {
               />
             </label>
           </div>
-          <div className="flex flex-col w-1/2 md:flex-row lg:flex-row mb-4 gap-3  items-center bg-blur px-3 rounded-lg border shadow-xl">
+          <div className="flex flex-col md:w-1/2 p-5 md:flex-row lg:flex-row mb-4 gap-3  items-center bg-blur px-3 rounded-lg border shadow-xl">
             <div className="form-control w-full md:w-1/2 lg:w-1/2 ">
               <label className="label">
                 <span className="label-text text-base font-bold ">
@@ -300,7 +300,7 @@ const Update = () => {
           </input>
                   */}
         <button className="custom-btn-22 btn-22">
-          <span className="text-white">Add to the Art & Craft</span>
+          <span className="text-white">Update the Art & Craft</span>
         </button>
       </form>
     </div>

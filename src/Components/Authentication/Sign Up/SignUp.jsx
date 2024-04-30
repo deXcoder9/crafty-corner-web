@@ -31,7 +31,7 @@ function SignUp() {
             window.location.href = "/";
         }, 1000);
     })
-    .catch(error => console.log(error.message))
+    .catch(error => setErrorMessage(error.message))
   }
     
   // handle Github login
@@ -46,7 +46,7 @@ function SignUp() {
             window.location.href = "/";
         }, 1000);
     })
-    .catch(error => console.log(error.message))
+    .catch(error => setErrorMessage(error.message))
   }
 
   //handle login 
@@ -86,7 +86,7 @@ function SignUp() {
     toast.success("user created successfully")
   })
   .catch((error)=>{
-    console.log(error.message)
+    setErrorMessage(error.message)
   })
 
   }

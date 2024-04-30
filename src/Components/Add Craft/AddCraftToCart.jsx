@@ -64,7 +64,7 @@ const AddCraftToCart = () => {
                 title: 'Success!',
                 text: 'Art and Craft Added Successfully',
                 icon: 'success',
-                confirmButtonText: 'Cool'
+                confirmButtonText: 'Done'
               })
             }
           })
@@ -254,7 +254,7 @@ const AddCraftToCart = () => {
               />
             </label>
           </div>
-          <div className="flex flex-col w-1/2 md:flex-row lg:flex-row mb-4 gap-3  items-center bg-blur px-3 rounded-lg border shadow-xl">
+          <div className="flex flex-col w-full p-4 md:w-1/2 md:flex-row lg:flex-row mb-4 gap-3  items-center bg-blur px-3 rounded-lg border shadow-xl">
             <div className="form-control w-full md:w-1/2 lg:w-1/2 ">
               <label className="label">
                 <span className="label-text text-base font-bold ">
@@ -271,7 +271,7 @@ const AddCraftToCart = () => {
                     value="yes"
                     onChange={handleRadioChange}
                   />
-                  <label className="text-[#696868] cursor-pointer" htmlFor="Yes">
+                  <label className=" cursor-pointer" htmlFor="Yes">
                     Yes
                   </label>
                 </div>
@@ -284,7 +284,7 @@ const AddCraftToCart = () => {
                     value="no"
                     onChange={handleRadioChange}
                   />
-                  <label className="text-[#696868] cursor-pointer" htmlFor="No">
+                  <label className=" cursor-pointer" htmlFor="No">
                     No
                   </label>
                 </div>
@@ -307,7 +307,7 @@ const AddCraftToCart = () => {
                     onChange={handleRadioChange}
                   />
                   <label
-                    className="text-[#696868] cursor-pointer"
+                    className=" cursor-pointer"
                     htmlFor="inStock"
                   >
                     In Stock
@@ -323,7 +323,7 @@ const AddCraftToCart = () => {
                     onChange={handleRadioChange}
                   />
                   <label
-                    className="text-[#696868] cursor-pointer"
+                    className=" cursor-pointer"
                     htmlFor="madeToOrder"
                   >
                     Made to Order
@@ -339,7 +339,7 @@ const AddCraftToCart = () => {
           className="btn btn-block btn-ghost bg-gray-800 text-white text-lg h-[60px] font-bold">
           </input>
                   */}
-                   <button className="custom-btn-22 btn-22"><span>Add to the Art & Craft</span></button>
+                   <button className="custom-btn-22 btn-22 text-white"><span>Add to the Art & Craft</span></button>
       </form>
     </div>
 
