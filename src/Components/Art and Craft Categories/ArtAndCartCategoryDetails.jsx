@@ -27,10 +27,10 @@ console.log(allCrafts)
 
 
     return (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:space-x-10 space-y-6 ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:space-x-10 space-y-6 my-10 ">
 
         {
-            matchedCategory.map(single => <div key={single._id} className="card   shadow-xl">
+            matchedCategory.map(single => <div key={single._id} className="card border p-5   shadow-xl">
             <figure><img src={single.photo}  /></figure>
             <div className=" text-left space-y-2 text-sm px-3">
               <h2 className="card-title py-3">{single.item_name}</h2>

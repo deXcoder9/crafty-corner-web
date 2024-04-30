@@ -9,7 +9,7 @@ const Private = ({children}) => {
     if (userInfo) {
         return children;
     }
-    return <Navigate to='/login'></Navigate>
+    return <Navigate to='/'></Navigate>
 };
 
 Private.propTypes = {

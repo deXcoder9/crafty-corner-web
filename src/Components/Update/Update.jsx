@@ -142,14 +142,18 @@ const Update = () => {
               </span>
             </label>
             <label className="input-group">
-              <input
-                type="text"
+            <select
+                className="select select-bordered w-full  rounded-full"
                 name="subcategory"
-                placeholder="Provide a subcategory"
-                className="input input-bordered lg:w-[400px] float-left"
-                required
-                defaultValue={subcategory}
-              />
+              >
+                
+                <option>Wooden Furniture & Sculptures</option>
+                <option> Wooden Home Decoration</option>
+                <option>Wooden Utensils and Kitchenware</option>
+                <option>Jute Home Decoration </option>
+                <option>Jute Kitchenware & utensils</option>
+                <option>Jute and wooden jewellery</option>
+              </select>
             </label>
           </div>
         </div>
@@ -226,6 +230,7 @@ const Update = () => {
                     id="yes"
                     className="radio"
                     value="yes"
+                    defaultValue="yes"
                     onChange={handleRadioChange}
                   />
                   <label
@@ -280,6 +285,7 @@ const Update = () => {
                     id="madeToOrder"
                     className="radio"
                     value="madeToOrder"
+                    defaultValue="madeToOrder"
                     onChange={handleRadioChange}
                   />
                   <label

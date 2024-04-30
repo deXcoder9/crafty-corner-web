@@ -92,11 +92,11 @@ const ArtnCraftList = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 space-y-4 place-items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 space-y-8 place-items-center  ">
         {filterDetails.map((x) => (
           <div
             key={x._id}
-            className="card card-compact w-96 bg-base-100 shadow-xl"
+            className="card card-compact w-96 bg-base-100 shadow-xl h-[500px]"
           >
             <figure>
               <img src={x.photo} className="w-[100%] h-[400px]" />
