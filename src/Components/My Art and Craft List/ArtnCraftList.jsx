@@ -40,7 +40,7 @@ const ArtnCraftList = () => {
           .then((data) => {
             console.log(data);
             if (data.deletedCount > 0) {
-              const remaining = details.filter((detail) => detail._id !== _id);
+              const remaining = UserAddedThings.filter((detail) => detail._id !== _id);
               setfilterDetails(remaining);
               Swal.fire({
                 title: "Deleted!",
